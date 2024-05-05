@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Nursery Shopping Cart</title>
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <div class="container">
+        <h1>VATS E-Nursery Shopping Cart</h1>
+        <div class="products">
+            <div class="row">
+                <div class="product">
+                    <img src="app_img/nurserylive-g-plants-rose-dark-pink-plant-in-grower-round-black-pot-922015_600x600.webp" alt="Rose Plant">
+                    <h3>Rose Plant</h3>
+                    <p>₹200</p>
+                    <button onclick="addToCart('Rose Plant', 200)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="app_img/nurserylive-litchi-tree-grown-through-seeds-plant.jpg" alt="Litchi Plant">
+                    <h3>Litchi Plant</h3>
+                    <p>₹250</p>
+                    <button onclick="addToCart('Litchi Plant', 250)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="app_img/alphonso-mango-plant-ratnagiri-grafted-1-healthy-live-plant-kadiyam-nursery-1_1200x1200.webp" alt="Mango Plant">
+                    <h3>Mango Plant</h3>
+                    <p>₹250</p>
+                    <button onclick="addToCart('Mango Plant', 250)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <img src="app_img/DSC6338.webp" alt="Curry Plant">
+                    <h3>Curry Plant</h3>
+                    <p>₹160</p>
+                    <button onclick="addToCart('Curry Plant', 160)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="app_img/71zinrf5WwL.jpg" alt="Lemon Plant">
+                    <h3>Lemon Plant</h3>
+                    <p>₹125</p>
+                    <button onclick="addToCart('Lemon Plant', 125)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="app_img/33397_good-luck-2-layer-lucky-bamboo.jpeg" alt="Lucky Bamboo Plant">
+                    <h3>Lucky Bamboo Plant</h3>
+                    <p>₹325</p>
+                    <button onclick="addToCart('Lucky Bamboo Plant', 325)">Add to Cart</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="product">
+                    <img src="app_img/marigold1-500x500.webp" alt="Marigold Plant">
+                    <h3>Marigold Plant</h3>
+                    <p>₹160</p>
+                    <button onclick="addToCart('Marigold Plant', 160)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="app_img/Desi-Hibiscus-Flower-Plant-04.webp" alt="Hibiscus Plant">
+                    <h3>Hibiscus Plant</h3>
+                    <p>₹137</p>
+                    <button onclick="addToCart('Hibiscus Plant', 137)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="app_img/51bNWUg1+YL._AC_UF1000,1000_QL80_.jpg" alt="Holy Basil Plant">
+                    <h3>Holy Basil Plant</h3>
+                    <p>₹120</p>
+                    <button onclick="addToCart('Holy Basil Plant', 120)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items"></ul>
+            <div id="cart-total">Total: ₹0.00</div>
+            <button onclick="checkout()" id="pk">Checkout</button>
+        </div>
+
+        <div id="popup" class="popup">
+            <p>Product Added to Cart!</p>
+        </div>
+        
+    </div> <!-- Closing container div -->
+    <script src="shop.js"></script>
+</body>
+</html>

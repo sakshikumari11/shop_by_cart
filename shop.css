@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-image: url("app_img/pngtree-blue-background-white-and-gradient-vector-image_2270616.jpg"); /* Replace "your_image_url_here.jpg" with the URL of your image */
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 20px;
+    width: 200px;
+    position: relative; 
+}
+
+.product button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 7px;
+    background-color: deepskyblue;
+    border-radius: 25px;
+    color: black;
+    font-weight: bold;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+}
+
+.cart {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.cart button {
+    display: block;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart button:hover {
+    background-color: #45a049;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.cart-total {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #950907;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 100; /* Ensure it appears on top of other content */
+}
+
+

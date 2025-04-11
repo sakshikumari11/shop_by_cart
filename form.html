@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form </title>
+    <style>
+        form{
+           background: pink;
+           width: 600px;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="#">
+        <h2 style="text-align: center;">Registration Form</h2>
+        <label for="name">Name :</label>
+        <input type="text" name="name" placeholder="Enter first name">  
+        &nbsp; &nbsp;
+        <input type="text" name="name" placeholder="Enter last name">
+        <br><br>
+        <label for="fname">Father's name :</label>
+        <input type="text" name="fname" placeholder="Enter Father name">
+        <br><br>
+        <label for="email">Email-ID :</label>
+         <input type="text" name="email" placeholder="Enter Email-Id">
+         <br><br>
+         <label for="phone">Mobile No. :</label>
+         <input type="text" name="phine" >
+         <br><br>
+         <label for="dob">DOB :</label>
+         <input type="date" name="dob">
+         <br><br>
+         <label for="gender">Gender :</label>
+         <input type="radio" name="mgender">
+         <label for="mgender">Male</label>
+         <input type="radio" name="fgender" >
+         <label for="fgender">Female</label>
+         <input type="radio" name="other">
+         <label for="other">Others</label>
+         <br><br>
+         <label for="dept">Department :</label>
+         <select name="dept" id="">
+             <option value="">Select Department</option>
+             <option value="">MCA</option>
+             <option value="">MBA</option>
+             <option value="">BCA</option>
+             <option value="">BBA</option>
+         </select>
+         <br><br>
+         <label for="city">City :</label>
+         <select name="city" id="">
+            <option value="">Select City</option>
+            <option value="">Delhi</option>
+            <option value="">Noida</option>
+            <option value="">Ghaziabad</option>
+            <option value="">Bulandshahr</option>
+            <option value="">Varansi</option>
+         </select>
+         <br><br>
+         <label for="add">Address :</label><br>
+         <textarea name="add" rows="4"></textarea>
+         <br><br>
+         <label for="im">Upload Photo :</label>
+         <input type="file" name="im">
+         <br><br>
+         <button>Submit</button>
+         
+        </form>
+</body>
+</html>
